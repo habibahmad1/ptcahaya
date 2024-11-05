@@ -10,6 +10,10 @@
   background-color: aquamarine;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #d4f9ff;
 }
@@ -18,24 +22,37 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
-  margin: 20px 0;
+  padding: 20px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #d4f9ff;
+  z-index: 1000;
+  transition: top 0.3s;
+}
+
+.hidden {
+  top: -100px; /* Menyembunyikan navbar di luar layar */
 }
 
 .navbar a {
   text-decoration: none;
   font-size: 30px;
+  font-weight: bold;
+  color: #000;
 }
 
 .navbar nav a {
   text-decoration: none;
+  font-weight: normal;
   font-size: 20px;
   color: black;
 }
 
-.navbar a:hover {
+.navbar nav a:hover {
   color: #05a3ff;
-  text-decoration: underline;
+  font-weight: bold;
 }
 
 nav {
@@ -43,4 +60,107 @@ nav {
   display: flex;
   justify-content: center;
   gap: 50px;
+}
+
+/* Home CSS */
+.content-home {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 120px;
+  padding: 20px;
+  margin: 170px 0;
+  padding-bottom: 200px;
+}
+
+.teks-home {
+  max-width: 400px;
+}
+
+.teks-home p:first-of-type {
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.teks-home p {
+  font-size: 10px;
+}
+
+.content-img img {
+  max-width: 600px;
+  height: auto;
+  border-top-left-radius: 120px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 120px;
+  border-bottom-left-radius: 10px;
+}
+
+.content-img img:hover {
+  opacity: 90%;
+  cursor: pointer;
+}
+/* Content Product */
+.content-product {
+}
+.product {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#product {
+  margin: 80px;
+}
+
+.card-product {
+  width: 300px;
+  margin: 40px;
+  border: 8px solid white;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #89d4ff;
+  color: #fff;
+}
+
+.card-product h1 {
+  cursor: pointer;
+}
+
+.card-product h1:hover {
+  color: #ffee02;
+}
+
+.card-product:hover {
+  border: 8px solid #9ef01a;
+}
+
+.card-product img {
+  width: 280px;
+  border-bottom: 3px solid white;
+  margin-bottom: 10px;
+}
+
+.card-product img:hover {
+  transform: translateX(180px);
+  transition: all 1s;
+  cursor: pointer;
+  transform: scale(1.3);
+  border: none;
+}
+
+/* Footer */
+.content-footer {
+  background-color: #000;
+  color: #fff;
+  padding: 240px 0 0 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 170px;
+}
+
+.content-footer .cr {
+  margin-top: 70px;
+  color: grey;
 }
