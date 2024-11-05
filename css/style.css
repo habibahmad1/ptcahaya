@@ -121,8 +121,8 @@ nav {
   border: 8px solid white;
   border-radius: 20px;
   padding: 20px;
-  background-color: #89d4ff;
-  color: #fff;
+  background-color: #ccecff;
+  color: #7c7c7c;
 }
 
 .card-product h1 {
@@ -239,6 +239,10 @@ nav {
   display: flex;
   gap: 60px;
   margin: 20px 0;
+}
+
+.link-sosmed a {
+  color: white;
 }
 
 @media (max-width: 600px) {
