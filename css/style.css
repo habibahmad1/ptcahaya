@@ -65,6 +65,7 @@ nav {
 /* Home CSS */
 .content-home {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
   gap: 120px;
@@ -173,11 +174,41 @@ nav {
   text-align: justify;
 }
 
+.card-testimoni:hover {
+  transform: scale(1.1);
+  transition: all 1s;
+}
+
 .testimoni {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin: 80px;
+}
+
+/* Content About */
+.content-about {
+  padding-top: 100px;
+}
+
+.about {
+  padding: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.teks-about {
+  width: 600px;
+  margin: 40px 0;
+  text-align: justify;
+}
+
+.map iframe {
+  width: 600px;
+  height: 450px;
+  border-radius: 20px;
 }
 
 /* Footer */
@@ -188,10 +219,44 @@ nav {
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 170px;
+  height: 270px;
 }
 
 .content-footer .cr {
   margin-top: 70px;
   color: grey;
+}
+
+.sosmed {
+  display: flex;
+  font-size: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-sosmed {
+  display: flex;
+  gap: 60px;
+  margin: 20px 0;
+}
+
+@media (max-width: 600px) {
+  .content-img img {
+    width: 400px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 80px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .teks-home {
+    max-width: 400px;
+    order: 2;
+  }
+
+  .map iframe {
+    width: 300px;
+    height: 400px;
+  }
 }
