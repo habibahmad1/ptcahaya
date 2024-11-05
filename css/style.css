@@ -130,6 +130,10 @@ nav {
   color: #000;
 }
 
+.card-product p {
+  font-size: 16px;
+}
+
 .card-product h1:hover {
   color: #ffee02;
 }
