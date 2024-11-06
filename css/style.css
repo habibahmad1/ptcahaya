@@ -32,6 +32,48 @@ body {
   transition: top 0.3s;
 }
 
+.navbar-hp {
+  display: flex;
+  height: 40px;
+  background-color: #05a3ff;
+  align-items: center;
+  justify-content: space-around;
+  gap: 250px;
+  color: white;
+}
+
+.navbar-hp a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+
+.navbar-side {
+  background-color: #fff;
+  width: 50vw;
+  height: 100vh;
+  position: absolute;
+  right: -900px;
+  transition: all 0.7s;
+}
+
+.navbar-side.active {
+  right: 0;
+}
+
+.navbar-side nav {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.navbar-side nav a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #000;
+}
+
 .hidden {
   top: -100px; /* Menyembunyikan navbar di luar layar */
 }
@@ -270,5 +312,9 @@ nav {
 
   .teks-about {
     width: 300px;
+  }
+
+  .navbar {
+    display: none;
   }
 }

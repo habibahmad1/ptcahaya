@@ -14,3 +14,10 @@ window.addEventListener("scroll", function () {
 
   lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Untuk menghindari angka negatif
 });
+
+const button = document.querySelector(".button");
+const navbarhp = document.querySelector(".navbar-side");
+
+button.addEventListener("click", () => {
+  navbarhp.classList.toggle("active"); // Toggle kelas "active"
+});
