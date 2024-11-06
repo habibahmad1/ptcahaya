@@ -75,7 +75,7 @@ nav {
 }
 
 .teks-home {
-  max-width: 400px;
+  max-width: 600px;
 }
 
 .teks-home p:first-of-type {
@@ -84,7 +84,7 @@ nav {
 }
 
 .teks-home p {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .content-img img {
