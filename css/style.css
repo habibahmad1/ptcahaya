@@ -262,7 +262,11 @@ nav {
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 270px;
+  height: 350px;
+}
+
+.content-footer p {
+  text-align: center;
 }
 
 .content-footer .cr {
@@ -313,5 +317,13 @@ nav {
 
   .navbar {
     display: none;
+  }
+
+  .content-footer p {
+    margin: 0 60px;
+  }
+
+  .content-footer {
+    height: 350px;
   }
 }
