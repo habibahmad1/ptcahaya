@@ -75,6 +75,10 @@ body {
   color: #000;
 }
 
+.navbar-side nav a:hover {
+  color: #05a3ff;
+}
+
 .hidden {
   top: -100px; /* Menyembunyikan navbar di luar layar */
 }
