@@ -299,6 +299,32 @@ nav {
   color: white;
 }
 
+.link-sosmed a:hover {
+  color: #05a3ff;
+}
+
+/* Button Up */
+.button-up {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 20px;
+  top: 85vh;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  opacity: 0; /* Mulai dengan tombol tidak terlihat */
+  transition: opacity 0.3s;
+}
+
+.button-up.show {
+  opacity: 1; /* Tampilkan tombol ketika di-scroll */
+}
+
 @media (max-width: 600px) {
   .content-img img {
     width: 400px;
