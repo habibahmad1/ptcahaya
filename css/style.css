@@ -16,6 +16,7 @@ html {
 
 body {
   background-color: #d4f9ff;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -54,7 +55,7 @@ body {
   width: 50vw;
   height: 100vh;
   position: absolute;
-  right: -900px;
+  right: -9900px;
   transition: all 0.7s;
 }
 
@@ -138,10 +139,6 @@ nav {
   border-bottom-left-radius: 10px;
 }
 
-.content-img img:hover {
-  opacity: 90%;
-  cursor: pointer;
-}
 /* Content Product */
 .content-product {
 }
