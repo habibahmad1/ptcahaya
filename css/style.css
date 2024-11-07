@@ -148,6 +148,10 @@ nav {
 
 /* Content Product */
 .content-product {
+  background-color: #05a3ff;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
 }
 .product {
   display: flex;
@@ -203,6 +207,13 @@ nav {
 }
 
 /* Content Testimoni */
+.content-testimoni {
+  background-color: #d4f9ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px 0 0 0;
+}
 .star {
   display: flex;
   color: #ffee02;
@@ -239,6 +250,9 @@ nav {
 /* Content About */
 .content-about {
   padding-top: 100px;
+  background-color: #05a3ff;
+  align-items: center;
+  color: #fff;
 }
 
 .about {
@@ -358,5 +372,9 @@ nav {
 
   .content-footer {
     height: 350px;
+  }
+
+  .card-testimoni {
+    width: 300px;
   }
 }
