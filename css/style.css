@@ -345,7 +345,7 @@ nav {
 
 @media (max-width: 600px) {
   .content-img img {
-    width: 400px;
+    width: 350px;
     border-top-left-radius: 80px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 80px;
